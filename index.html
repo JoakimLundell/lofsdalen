@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
 
   <!-- Basic Page Needs
@@ -23,6 +23,9 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <script src="js/jquery-1.12.1.min.js"></script>
+  <script src="js/script.js"></script>
+
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -34,10 +37,25 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <header>
     <div class="container">
+      <!--div class="row">
+        <div class="twelve columns" style="text-align:right;">
+          <div>Facebook | Instagram | Twitter &nbsp;&nbsp;Sv|Eng</div>
+        </div>
+      </div-->
       <div class="row">
-        <div class="twelve columns">
-          <h4>Logo</h4>
-          <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content!</p>
+        <div class="four columns">
+          <h4 class="logo-text">Lofsdalen stugorna</h4>
+        </div>
+        <div class="eight columns right">
+          <nav>
+            <ul class="top-menu">
+              <li><a href="">Hem</a></li>
+              <li><a href="">Stugorna</a></li>
+              <li><a href="">Hem</a></li>
+              <li><a href="">Stugorna</a></li>
+              <li><a href="">Hem</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
@@ -45,14 +63,25 @@
 
   <section id="hero">
     <div class="container">
+
           <div class="row">
-            <div class="one-half column">
-              <h4 class="hero-heading">Stop coding non-responsive sites. Let users view sites from anywhere.</h4>
-              <a class="button button-primary" href="http://getskeleton.com">Try Skeleton</a>
+            <div class="eight columns">
+
+              <h4 class="hero-heading">Välkomma till Lofsdalen</h4>
+              <p>Vill du boka de bästa stugorna med skönaste läget och vackareste utsikten då har du kommit rätt.</p>
+              <a class="button button-primary" href="http://getskeleton.com">Kontakta oss</a>
             </div>
-            <div class="one-half column phones">
-              <img class="phone" src="images/iphone.png">
-              <img class="phone" src="images/iphone.png">
+            <div class="four columns phones">
+              <div>Boka stuga</div>
+              <div class="calender">
+                <label for="exampleRecipientInput">Reason for contacting</label>
+                <select class="u-full-width" id="exampleRecipientInput">
+                  <option value="Option 1">Gatan 23 (12 bäddare)</option>
+                  <option value="Option 2">Admiration</option>
+                  <option value="Option 3">Can I get your number?</option>
+                </select>
+              </div>
+              </div>
             </div>
           </div>
         </div>

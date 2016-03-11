@@ -1,11 +1,31 @@
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right:0;
-  background-color: darkred;
+  /*background-color: rgba(228,86,65,0.6);*/
   color: white;
-  height: 90px;
+  height: 100px;
+  transition: height 500ms, background 500ms;
+  z-index: 2;
+  background: url('../images/hero.jpg') no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header.small {
+  height: 100px;
+
+}
+header.small .container {
+  border-bottom: 2px solid white;
+}
+
+header .logo-text {
+  line-height: inherit;
+}
+
+header nav.top {
+
 }
 
 section#hero {
@@ -13,14 +33,56 @@ section#hero {
   height: 400px;
   background: url('../images/hero.jpg') no-repeat center top;
   background-size: cover;
+  background-attachment: fixed;
+}
+
+section#hero .calender {
+  border: 1px solid #222222;
+  border-radius: 4px;
 }
 
 section#help {
-  background: url('../images/need-help.jpg') no-repeat center top;
-  background-size: cover;
+  height: 300px;
+  /*background: url('../images/need-help.jpg') no-repeat center top;
+  background-size: cover;*/
+  background-color: transparent;
 }
 
 footer {
   height: 300px;
   background-color: brown;
+}
+/* menus */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.top-menu {
+
+}
+
+li {
+  float:right
+}
+
+li a {
+  font-size: 20px;
+  display: block;
+  color: white;
+  padding: 10px 0 2px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: solid;
+  	border-bottom-width: 15px;
+}
+li a:hover {
+  border-bottom: 3px solid white;
+}
+
+/* positions */
+
+.right {
+  text-align:right;
 }
